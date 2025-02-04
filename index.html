@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODIE.CO - Discover Delicious Meals</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-banner">
+      Sign up and get 50% off your first meal order.
+      <span class="sign-up">Sign Up Now </span>
+      <span class="close-banner">×</span>
+    </div>
+
+    <nav>
+      <div class="logo">FOODIE.CO</div>
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <div class="nav-item">
+          <div class="shop">Menu <span class="dropdown-arrow"></span></div>
+          <span>Popular Dishes</span>
+          <span>New Recipes</span>
+          <span>Cuisines</span>
+        </div>
+      </div>
+      <input
+        type="search"
+        class="search-bar"
+        placeholder="Search for products..."
+      />
+      <!-- Mobile Burger Menu Icon -->
+      <i class="fas fa-bars menu-icon"></i>
+      <div class="cart-and-icons">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <i class="fas fa-user-circle user-icon"></i>
+      </div>
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-nav">
+        <div class="nav-item">
+          <div class="shop">Shop <span class="dropdown-arrow"></span></div>
+          <span>On Sale</span>
+          <span>New Arrivals</span>
+          <span>Brands</span>
+          <span>Search</span>
+          <span>My Account</span>
+          <span>Shopping Cart</span>
+        </div>
+      </div>
+      <!-- Overlay for mobile nav -->
+      <div class="nav-overlay"></div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">DISCOVER MEALS THAT DELIGHT YOUR TASTE</h1>
+        <p class="hero-description">
+          Browse through our diverse collection of mouth-watering dishes,
+          carefully curated to satisfy every craving.
+        </p>
+        <button class="shop-now-btn">Explore Now</button>
+
+        <div class="stats">
+          <div class="stat-item">
+            <h3>200+</h3>
+            <p>International Brands</p>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <h3>2,000+</h3>
+            <p>High-Quality Products</p>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <h3>30,000+</h3>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="./public/images/image.png" />
+        <span class="sparkle">✦</span>
+        <span class="sparkle">✦</span>
+      </div>
+    </div>
+
+    <div class="brands"></div>
+
+    <!-- New Arrivals Section -->
+    <!-- New Arrivals Section -->
+    <section class="new-arrivals">
+      <h2 class="section-title">NEW RECIPES</h2>
+      <div class="products-grid" id="newArrivalsGrid">
+        <!-- Products will be inserted here dynamically -->
+      </div>
+      <a href="#" class="view-all">View All</a>
+    </section>
+
+    <!-- Top Selling Section -->
+    <section class="new-arrivals top-selling">
+      <h2 class="section-title">TOP SELLING</h2>
+      <div class="products-grid" id="topSellingGrid">
+        <!-- Products will be inserted here dynamically -->
+      </div>
+      <a href="#" class="view-all">View All</a>
+    </section>
+
+    <section class="browse-styles">
+      <h2 class="section-title">GET UPDATES ON NEW RECIPES & OFFERS</h2>
+      <div class="style-container">
+        <div class="style-item casual">
+          <img src="./public/images/food1.png" />
+          <h3>Casual</h3>
+        </div>
+        <div class="style-item formal">
+          <img src="./public/images/menu2.jpg" />
+          <h3>Formal</h3>
+        </div>
+        <div class="style-item party">
+          <img src="./public/images/menu3.jpg" />
+          <h3>Party</h3>
+        </div>
+        <div class="style-item gym">
+          <img src="./public/images/menu4.jpg" />
+          <h3>Gym</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials-header">
+        <h2>OUR HAPPY CUSTOMERS</h2>
+        <div class="nav-buttons">
+          <button class="slider-nav prev">←</button>
+          <button class="slider-nav next">→</button>
+        </div>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="customer-name">
+              <h3>Sarah M.</h3>
+              <span class="verified">✓</span>
+            </div>
+            <p class="review-text">
+              "The meals from FoodieHub are absolutely delicious! Every dish is
+              packed with flavor, and the freshness is undeniable. I love how
+              convenient and tasty their service is."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="customer-name">
+              <h3>Alex K.</h3>
+              <span class="verified">✓</span>
+            </div>
+            <p class="review-text">
+              "I've never had such a smooth and satisfying experience ordering
+              food online. FoodieHub delivers on taste, quality, and service
+              every single time!"
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <div class="customer-name">
+              <h3>Alex K.</h3>
+              <span class="verified">✓</span>
+            </div>
+            <p class="review-text">
+              "Finding healthy yet delicious meals used to be a challenge, but
+              FoodieHub has made it so easy! The variety is great, and I always
+              look forward to my next order."
+            </p>
+          </div>
+          <!-- Repeat similar blocks for Alex K. and James L. -->
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2>STAY UP TO DATE ABOUT<br />OUR LATEST MENU AND OFFERS</h2>
+        <div class="subscribe">
+          <div class="email-input">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Enter your email address" />
+          </div>
+          <button>Subscribe to Newsletter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="footer-content">
+      <div class="brand-section">
+        <h3>FOODIE.CO</h3>
+        <p>
+          We have clothes that suits your style and which you're proud to wear.
+          From women to men.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="balck"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-column">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Chefs</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="link-column">
+          <h4>HELP</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="link-column">
+          <h4>FAQ</h4>
+          <ul>
+            <li><a href="#">Create an Account</a></li>
+            <li><a href="#">Track Your Order</a></li>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="link-column">
+          <h4>RESOURCES</h4>
+          <ul>
+            <li><a href="#">Recipe Blog</a></li>
+            <li><a href="#">Cooking Tips</a></li>
+            <li><a href="#">Nutrition Guides</a></li>
+            <li><a href="#">Video Tutorials</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>Foodie.co © 2025, All Rights Reserved</p>
+      <div class="payment-methods">
+        <div class="pay">
+          <img src="./public/images/visa.svg" alt="Visa" />
+        </div>
+        <div class="pay">
+          <img src="./public/images/mastercard-logo.png" alt="Mastercard" />
+        </div>
+        <div class="pay">
+          <img src="./public/images/paypal.png" alt="PayPal" />
+        </div>
+        <div class="pay">
+          <img src="./public/images/Apple_Pay_logo.svg.png" alt="Apple Pay" />
+        </div>
+        <div class="pay">
+          <img src="./public/images/Google_Pay_Logo.svg.png" alt="Google Pay" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+
+<script>
+  function generateStars() {
+    const rating = (Math.random() * 2 + 3).toFixed(1); // Mock rating between 3.0 - 5.0
+    const fullStars = Math.floor(rating);
+    const decimal = Number(rating.toString().split(".")[1]) || 0;
+
+    let starsHTML = "";
+    for (let i = 0; i < 5; i++) {
+      if (i < fullStars) {
+        starsHTML += "<span>⭐</span>";
+      } else if (i === fullStars && decimal > 0) {
+        starsHTML += `<span class="partial" style="--width: ${
+          decimal * 10
+        }%">⭐</span>`;
+      }
+    }
+    return { starsHTML, rating };
+  }
+
+  function createProductCard(meal) {
+    const { starsHTML, rating } = generateStars();
+    const price = (Math.random() * 10 + 5).toFixed(2); // Mock price between $5 - $15
+    const discount =
+      Math.random() < 0.3 ? Math.floor(Math.random() * 30) + 10 : null;
+    const originalPrice = discount ? (price * 1.2).toFixed(2) : null;
+
+    return `
+          <div class="product-card">
+              <div class="product-image">
+                  <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+              </div>
+              <h3 class="product-name">${meal.strMeal}</h3>
+              <p class="category">${meal.strCategory}</p>
+              <div class="rating">
+                  <div class="stars">${starsHTML}</div>
+                  <span class="rating-number">${rating}/5</span>
+              </div>
+              <div class="price">
+                  <span class="current-price">$${price}</span>
+                  ${
+                    originalPrice
+                      ? `<span class="original-price">$${originalPrice}</span>`
+                      : ""
+                  }
+                  ${
+                    discount
+                      ? `<span class="discount-badge">-${discount}%</span>`
+                      : ""
+                  }
+              </div>
+          </div>
+      `;
+  }
+
+  let allProducts = []; // Store fetched meals globally for filtering
+
+  function fetchFoodProducts() {
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data.meals) return;
+
+        allProducts = data.meals;
+        renderProducts();
+      })
+      .catch((error) => console.error("Error fetching food products:", error));
+  }
+
+  function renderProducts() {
+    const isMobile = window.innerWidth <= 768;
+    const newArrivalsGrid = document.getElementById("newArrivalsGrid");
+    const productCount =
+      window.innerWidth > 1200 ? 8 : window.innerWidth > 992 ? 6 : 4;
+
+    let displayedProducts = isMobile
+      ? allProducts.slice(0, 2)
+      : allProducts.slice(0, productCount);
+    newArrivalsGrid.innerHTML = displayedProducts
+      .map(createProductCard)
+      .join("");
+  }
+
+  document.addEventListener("DOMContentLoaded", fetchFoodProducts);
+
+  window.addEventListener("resize", debounce(renderProducts, 250));
+
+  document.querySelector(".search-bar").addEventListener("input", (e) => {
+    filterProducts(e.target.value);
+  });
+
+  function filterProducts(searchTerm) {
+    const filtered = allProducts.filter((meal) =>
+      meal.strMeal.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    document.getElementById("newArrivalsGrid").innerHTML = filtered
+      .map(createProductCard)
+      .join("");
+  }
+
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func(...args), wait);
+    };
+  }
+</script>
