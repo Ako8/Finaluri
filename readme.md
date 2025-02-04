@@ -1,0 +1,1 @@
+finaluris proeqtis aweva githubze
